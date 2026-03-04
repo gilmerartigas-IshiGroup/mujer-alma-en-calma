@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* DiarioParaAmar visual system */
+  --cream-50: 255 249 245;      /* #FFF9F5 BackgroundLight */
+  --ivory-100: 255 251 248;     /* #FFFBF8 SurfaceLight */
+  --sage-200: 242 213 222;      /* #F2D5DE RoseAccentLight */
+  --sand-300: 245 230 208;      /* #F5E6D0 WarmSand */
+  --terracotta-500: 155 142 193;/* #9B8EC1 LavenderPrimary */
+  --cocoa-900: 74 63 74;        /* #4A3F4A CharcoalDark */
+  --rose-400: 212 160 176;      /* #D4A0B0 RoseAccent */
+  --lavender-300: 203 184 215;  /* #CBB8D7 LavenderLight */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-brand-cream text-brand-cocoa antialiased;
+  font-family: var(--font-sans), sans-serif;
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(var(--lavender-300), 0.26) 0, transparent 30%),
+    radial-gradient(circle at 84% 0%, rgba(var(--rose-400), 0.18) 0, transparent 34%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif), serif;
+  letter-spacing: 0.01em;
+}
+
+/* A little typography polish */
+.prose-soft p {
+  @apply leading-relaxed;
+}

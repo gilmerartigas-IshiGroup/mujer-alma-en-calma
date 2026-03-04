@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next
+/.next
+/out
+
+# misc
+.DS_Store
+*.log
+.env.local
+.env.*.local
+
+# typescript
+*.tsbuildinfo
+
+# source assets (raw originals)
+assets/raw/**
